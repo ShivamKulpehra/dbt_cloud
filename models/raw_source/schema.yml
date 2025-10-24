@@ -1,0 +1,20 @@
+version: 2
+
+models:
+    - name: orders
+      description: "A starter dbt model"
+      columns:
+          - name: order_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    
+    - name: customer
+      description: "A starter dbt model"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
